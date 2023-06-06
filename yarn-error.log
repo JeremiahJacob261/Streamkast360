@@ -1,0 +1,47 @@
+Arguments: 
+  /home/jerryl/.local/share/fnm/node-versions/v18.12.0/installation/bin/node /run/user/1000/fnm_multishells/5852_1685890533927/bin/yarn install
+
+PATH: 
+  /opt/gradle/gradle-5.6.2/bin:/home/jerryl/ANDROID:/home/jerryl/Android/platform-tools:/home/jerryl/Android/cmdline-tools/tools/bin:/home/jerryl/Android/cmdline-tools/tools:/run/user/1000/fnm_multishells/5852_1685890533927/bin:/home/jerryl/.local/share/fnm:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/home/jerryl/.local/bin:/snap/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/jerryl/.pub-cache/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+
+npm manifest: 
+  {
+    "name": "streamkast360",
+    "version": "1.0.0",
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web"
+    },
+    "dependencies": {
+      "expo": "~48.0.18",
+      "expo-status-bar": "~1.4.4",
+      "react": "18.2.0",
+      "react-native": "0.71.8"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.20.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
