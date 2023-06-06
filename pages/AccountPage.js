@@ -1,4 +1,4 @@
-import { Button, PaperProvider } from "react-native-paper";
+import { Button, Divider, PaperProvider } from "react-native-paper";
 import { Text, View } from 'react-native'
 import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
@@ -15,17 +15,18 @@ function Acc({ navigation }) {
                     }} />
                 </View>
 
-                <View style={{ flexDirection: 'row', borderRadius: 8, margin: 8, padding: 30, backgroundColor: '#222E50', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'row', borderRadius: 8, margin: 8, padding: 30, backgroundColor: '#222E50', alignItems: 'center' }} onPress={() => navigation.navigate('Login')}>
                     <Ionicons name="md-person-circle" size={28} color="white" style={{ flex: 1 }} />
                     <Text style={{ color: 'white', flex: 3, fontWeight: '500' }}>Sign In</Text>
+                    <Divider/>
                     <Ionicons name="chevron-forward" size={24} color="white" onPress={() => navigation.navigate('Login')}/></View>
 
-                <View style={{ flexDirection: 'row', borderRadius: 8, margin: 8, padding: 25, backgroundColor: '#222E50', alignItems: 'center' }}>
+                <View style={{ flexDirection: 'row', borderRadius: 8, margin: 8, padding: 30, backgroundColor: '#222E50', alignItems: 'center' }}>
                     <Ionicons name="md-person-add-sharp" size={24} color="white" style={{ flex: 1 }} />
-                    <View style={{ flex: 3 }}>
-                        <Text style={{ color: 'white', fontWeight: '600' }}>Create An Account</Text>
+                    <View style={{ flex: 1 }}>
+                        <Text style={{ color: 'white', fontWeight: '400' }} >Create An Account</Text>
                     </View>
-                    <Ionicons name="chevron-forward" size={24} color="white" /></View>
+                    <Ionicons name="chevron-forward" size={24} color="white" onPress={() => navigation.navigate('Create')}/></View>
 
                 <View style={{ flexDirection: 'row', borderRadius: 8, margin: 8, padding: 25, borderColor: '#222E50', borderWidth: 2, alignItems: 'center' }}>
                     <Entypo name="globe" size={20} color="white" style={{ flex: 1 }} />
